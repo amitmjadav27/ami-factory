@@ -1,0 +1,20 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+
+    - name: Install Git
+      package:
+        name: git
+        state: present
+
+    - name: Install wget
+      package:
+        name: wget
+        state: present
+
+    - name: Install Java
+      package:
+        name: java-17-amazon-corretto
+        state: present
