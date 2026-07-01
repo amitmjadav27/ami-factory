@@ -21,7 +21,7 @@ variable "aws_region" {
 
 source "amazon-ebs" "linux" {
   region            = var.aws_region
-  source_ami        = "ami-0685bcc683dadb6b9"
+  source_ami        = "ami-0d351f1b760a30161"
   instance_type     = "t3.micro"
   ssh_username      = "ec2-user"
   ami_name          = "github-actions-linux-{{timestamp}}"
