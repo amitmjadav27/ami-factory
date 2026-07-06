@@ -54,7 +54,7 @@ build {
   # the "ansible" provisioner. If you'd rather run Ansible on the instance itself,
   # switch to the "ansible-local" provisioner and ensure Ansible is installed there.
   provisioner "ansible" {
-    playbook_file = "ansible/playbook.yml"
+    playbook_file = "../ansible/playbook.yml"
   }
 
   post-processor "manifest" {
