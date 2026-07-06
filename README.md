@@ -10,7 +10,6 @@ This project demonstrates how to create a custom Amazon Machine Image (AMI) usin
 
 The pipeline launches a temporary EC2 instance from a base AMI, performs software installation using Packer provisioners, creates a new AMI, and outputs the generated AMI ID.
 
-This implementation serves as the foundation for migrating an existing Jenkins-based AMI build pipeline to GitHub Actions.
 
 ---
 
