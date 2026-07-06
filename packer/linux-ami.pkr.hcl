@@ -49,12 +49,12 @@ build {
     ]
   }
 
-  # Run the Ansible playbook to install git, wget, and Java (ansible/playbook.yml).
+  # Run the Ansible playbook to install git, wget, and Java (../ansible/playbook.yml).
   # This requires that the machine running Packer has Ansible installed when using
   # the "ansible" provisioner. If you'd rather run Ansible on the instance itself,
   # switch to the "ansible-local" provisioner and ensure Ansible is installed there.
   provisioner "ansible" {
-    playbook_file = "../ansible/playbook.yml"
+    playbook_file = "${path.root}/../ansible/playbook.yml"
   }
 
   post-processor "manifest" {
